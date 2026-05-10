@@ -10,9 +10,10 @@
 #include <stdio.h>
 #include "startup.h"
 
+
 int32_t main(void)
 {
-  int32_t retVal = SetSystemAndBusClockConfig(SYS_CLOCK_SPEED_10M, 0, false);
+  int32_t retVal = SetSystemAndBusClockConfig(SYS_CLOCK_SPEED_10M, BUS_CLOCK_DIVIDER_0, false);
   printf("Run complete! Return value is: %d\n", retVal);
 
   return 0;
